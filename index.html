@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+  <meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+/>
+  <link rel="stylesheet" href="main.css">
+
+  <title>Online Pulsmessung</title>
+</head>
+<body>
+
+
+
+
+<div id = "Error_Item">
+  <section id="Errortext_Item">ERROR</section>
+</div>
+
+<video id="video" width="0" height="0" autoplay></video>
+<section id = "Obere_Flexbox">
+   <section id="Überschrift_Item">
+     Ruhepulsmessung
+   </section>
+   <section id="Anleitung_Item">
+     Damit der Service funktioniert, muss der Zugriff auf die Kamera zugelassen werden 
+   </section>
+
+   
+   <canvas id="Canvas_Item" width="50" height="50" style="border:1px solid #000000;" ></canvas>
+    
+</section>
+
+
+<button id ="Button_measurement" onclick="measurement()"  >Messung starten</button>
+
+<div id="Plot_Item" >
+</div>
+
+
+<section id = "Untere_Flexbox">
+  <div class = "info_text" id="infoMeasurement" ></div>
+  <div class = "info_text" id="valueMeasurement" ></div>
+</section>
+
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="Funktionen.js"></script> 
+
+
+</body>
+</html>
